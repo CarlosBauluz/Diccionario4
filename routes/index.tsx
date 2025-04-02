@@ -8,11 +8,7 @@ export default async function Home() {
   return (
     <div>
       <p>hola buenas</p>
-      {props.map((em) => (
-        <div>
-          <SacarPalabra {...em} />
-        </div>
-      ))}
+      {props.map(em => <SacarPalabra {...em} />)}
     </div>
   );
 }
